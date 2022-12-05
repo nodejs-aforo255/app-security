@@ -1,6 +1,5 @@
-const epxress = require('express')
-const router = epxress.Router()
-
+const express = require('express')
+const router = express.Router()
 router.use('/auth', require('./auth.routes'))
 
 router.get('*', (req, res) => {
